@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Get in touch with Vikas Furnished.">
+<meta property="og:title" content="Contact Us — Vikas Furnished">
+<meta property="og:type" content="website">
+<title>Contact Us — Vikas Furnished</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23262220'/><text x='50' y='68' font-size='52' font-family='Georgia' font-weight='bold' fill='%23c9a87c' text-anchor='middle'>V</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="top-bar"><div class="container"><p>✦ Free delivery & installation on orders above ₹50,000 across India ✦</p></div></div>
+<header class="site-header" id="siteHeader">
+<div class="container header-inner">
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<a href="index.html" class="logo"><span class="logo-mark">V</span><span class="logo-text"><span class="logo-name">Vikas Furnished</span><span class="logo-tagline">Crafting Comfort</span></span></a>
+<nav class="main-nav" id="mainNav" aria-label="Main navigation"><ul>
+<li><a href="index.html" class="">Home</a></li>
+<li><a href="products.html" class="">Products</a></li>
+<li><a href="about.html" class="">About</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul></nav>
+<div class="header-actions"><a href="contact.html" class="btn btn-outline btn-sm">Get in Touch</a></div>
+</div></header>
+<div class="page-banner"><div class="container"><h1>Contact Us</h1><p>We'd love to hear from you — whether it's a question, a custom request, or just to say hello.</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div></div></div>
+<div class="container"><div class="contact-layout">
+<div class="contact-info reveal"><span class="eyebrow">Get in Touch</span><h2>Let's Talk Furniture</h2>
+<p style="color:var(--color-text-light);margin-bottom:2rem">Have a question about a product, need help with an order, or looking for custom furniture? Our team is ready to assist you.</p>
+<div class="contact-detail"><div class="contact-detail-icon">📍</div><div><strong>Visit Our Showroom</strong><p>123 Furniture Plaza, MG Road, Bengaluru, Karnataka 560001, India</p></div></div>
+<div class="contact-detail"><div class="contact-detail-icon">📞</div><div><strong>Call Us</strong><p><a href="tel:+919876543210">+91 98765 43210</a></p></div></div>
+<div class="contact-detail"><div class="contact-detail-icon">✉️</div><div><strong>Email Us</strong><p><a href="mailto:hello@vikasfurnished.com">hello@vikasfurnished.com</a></p></div></div>
+<div class="contact-detail"><div class="contact-detail-icon">🕒</div><div><strong>Business Hours</strong><p>Monday – Saturday: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p></div></div>
+<div class="contact-map"><p>📍 Map: 123 Furniture Plaza, MG Road, Bengaluru</p></div>
+</div>
+<div class="contact-form-wrap reveal reveal-delay-1">
+<h2>Send Us a Message</h2>
+<p style="color:var(--color-text-light);margin-bottom:1.5rem;font-size:.92rem">Fill out the form below and we'll get back to you within 24 hours.</p>
+<div id="formMessage"></div>
+<form id="contactForm" onsubmit="return handleContact(event)">
+<div class="form-row">
+<div class="form-group"><label for="name">Full Name <span class="required">*</span></label><input type="text" id="name" name="name" required placeholder="Your full name"></div>
+<div class="form-group"><label for="email">Email <span class="required">*</span></label><input type="email" id="email" name="email" required placeholder="you@example.com"></div>
+</div>
+<div class="form-row">
+<div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+91 98765 43210"></div>
+<div class="form-group"><label for="subject">Subject</label><select id="subject" name="subject"><option value="">Select a topic</option><option>Product Enquiry</option><option>Custom Order</option><option>Delivery</option><option>Warranty</option><option>General</option></select></div>
+</div>
+<div class="form-group"><label for="message">Message <span class="required">*</span></label><textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea></div>
+<button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send Message</button>
+</form></div>
+</div></div>
+<script>
+function handleContact(e){
+  e.preventDefault();
+  var msg=document.getElementById('formMessage');
+  msg.className='form-message success';
+  msg.textContent='✅ Thank you! Your message has been received. We will get back to you within 24 hours.';
+  document.getElementById('contactForm').reset();
+  return false;
+}
+</script>
+
+<section class="newsletter"><div class="container"><div class="newsletter-inner">
+<div class="newsletter-text"><h2>Join the Vikas Furnished Family</h2><p>Subscribe for exclusive offers, new arrivals, and design inspiration.</p></div>
+<form class="newsletter-form" action="contact.html"><input type="email" name="newsletter_email" placeholder="Your email address" required><button type="submit" class="btn btn-primary">Subscribe</button></form>
+</div></div></section>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-col footer-brand">
+<a href="index.html" class="logo logo-footer"><span class="logo-mark">V</span><span class="logo-text"><span class="logo-name">Vikas Furnished</span><span class="logo-tagline">Crafting Comfort</span></span></a>
+<p class="footer-about">Premium handcrafted furniture for modern Indian homes. We blend timeless craftsmanship with contemporary design.</p>
+<div class="social-links"><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Pinterest">PIN</a><a href="#" aria-label="YouTube">YT</a></div>
+</div>
+<div class="footer-col"><h3>Shop</h3><ul class="footer-links"><li><a href="products.html?category=sofas">Sofas</a></li><li><a href="products.html?category=beds">Beds</a></li><li><a href="products.html?category=dining-sets">Dining Sets</a></li><li><a href="products.html?category=wardrobes">Wardrobes</a></li><li><a href="products.html?category=coffee-tables">Coffee Tables</a></li><li><a href="products.html?category=office-desks">Office Desks</a></li></ul></div>
+<div class="footer-col"><h3>Company</h3><ul class="footer-links">
+<li><a href="about.html">About Us</a></li><li><a href="products.html">Our Products</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li>
+</ul></div>
+<div class="footer-col"><h3>Get in Touch</h3><ul class="footer-contact">
+<li><strong>Address:</strong><br>123 Furniture Plaza, MG Road, Bengaluru, Karnataka 560001, India</li>
+<li><strong>Phone:</strong><br><a href="tel:+919876543210">+91 98765 43210</a></li>
+<li><strong>Email:</strong><br><a href="mailto:hello@vikasfurnished.com">hello@vikasfurnished.com</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom"><p>&copy; 2026 Vikas Furnished. All rights reserved.</p><p class="footer-credits">Crafted with care for quality living.</p></div>
+</div></footer>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="assets/js/main.js"></script>
+</body></html>
